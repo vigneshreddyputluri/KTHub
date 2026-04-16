@@ -16,6 +16,7 @@
 - Add contribution proposal flow
 - Add assignment curation flow
 - Add mock authentication states
+- Add user settings page
 
 ## Release 0.3 - Backend MVP
 
