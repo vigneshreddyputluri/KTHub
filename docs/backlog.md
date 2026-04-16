@@ -4,22 +4,27 @@
 
 - Create product vision and requirements artifacts
 - Build static homepage/dashboard prototype
-- Show role-based mode switching
+- Show learner/instructor mode switching
 - Show KT cards and detail preview
 - Show assignments and contribution activity
 
 ## Release 0.2 - Clickable MVP
 
-- Add real routing
-- Add KT detail page
-- Add create KT form
-- Add contribution proposal flow
-- Add assignment curation flow
-- Add mock authentication states
+- Add real routing - Completed with browser hash routes
+- Add KT detail page - Completed
+- Add create KT form - Completed with local draft persistence
+- Add contribution proposal flow - Completed with local proposal persistence
+- Add assignment curation flow - Completed with local assignment persistence
+- Add learner/instructor view mode switching - Completed
+- Add account and institution association model - Completed in docs and mock UI
+- Add Node.js and Express.js backend foundation - Completed
+- Add v0.2 delivery plan and release notes - Completed
 
 ## Release 0.3 - Backend MVP
 
-- Add user accounts and role permissions
+- Add user and institution accounts
+- Add verified institution association workflow
+- Add membership-based institution admin permissions
 - Add database schema
 - Add KT CRUD APIs
 - Add contribution review workflow

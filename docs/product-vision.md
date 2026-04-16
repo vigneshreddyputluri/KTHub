@@ -40,7 +40,7 @@ KTHub should help people answer four questions:
 
 The MVP should prove that users understand and value:
 
-- Discovering KTs by role, topic, difficulty, and institution
+- Discovering KTs by learner/instructor view mode, topic, difficulty, and institution
 - Viewing a KT with lessons, assignments, teaching notes, and contribution activity
 - Switching between learner and instructor perspectives
 - Contributing improvements to a KT

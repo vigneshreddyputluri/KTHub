@@ -8,203 +8,26 @@
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="#top" aria-label="KTHub home">
+      <a class="brand" href="#/" aria-label="KTHub home">
         <span class="brand-mark">KT</span>
         <span>KTHub</span>
       </a>
       <nav class="nav" aria-label="Main navigation">
-        <a href="#explore">Explore</a>
-        <a href="#assignments">Assignments</a>
-        <a href="#workflow">Contribute</a>
-        <a href="#institutions">Institutions</a>
+        <a href="#/explore">Explore</a>
+        <a href="#/assignments">Assignments</a>
+        <a href="#/contributions">Contribute</a>
+        <a href="#/institutions">Institutions</a>
       </nav>
-      <button class="icon-button" type="button" aria-label="Open notifications" title="Notifications">
-        <span aria-hidden="true">!</span>
-      </button>
+      <label class="mode-select" aria-label="KT view mode">
+        <span>View mode</span>
+        <select id="view-mode-select">
+          <option value="learner">Learner</option>
+          <option value="instructor">Instructor</option>
+        </select>
+      </label>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Knowledge transfer, made collaborative</p>
-          <h1>KTHub</h1>
-          <p class="hero-text">
-            Discover, teach, improve, and reuse practical knowledge modules across classrooms,
-            companies, and communities.
-          </p>
-          <div class="hero-actions">
-            <a class="primary-action" href="#explore">Explore KTs</a>
-            <a class="secondary-action" href="#create">Create KT</a>
-          </div>
-        </div>
-        <div class="hero-panel" aria-label="KTHub platform snapshot">
-          <div class="knowledge-map" aria-label="Knowledge collaboration map">
-            <span class="map-node large">KT</span>
-            <span class="map-node top">Learners</span>
-            <span class="map-node right">Instructors</span>
-            <span class="map-node bottom">Assignments</span>
-            <span class="map-node left">Contributors</span>
-          </div>
-          <div class="signal-row">
-            <span>Active KTs</span>
-            <strong>12,480</strong>
-          </div>
-          <div class="signal-row">
-            <span>Contributors</span>
-            <strong>38,900</strong>
-          </div>
-          <div class="signal-row">
-            <span>Institution collections</span>
-            <strong>920</strong>
-          </div>
-        </div>
-      </section>
-
-      <section class="mode-bar" aria-label="Role mode selector">
-        <button class="mode-button active" type="button" data-mode="learner">Learner</button>
-        <button class="mode-button" type="button" data-mode="instructor">Instructor</button>
-        <button class="mode-button" type="button" data-mode="creator">Creator</button>
-        <button class="mode-button" type="button" data-mode="institution">Institution</button>
-      </section>
-
-      <section class="dashboard" id="explore">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Explore</p>
-            <h2 id="mode-title">Learner dashboard</h2>
-          </div>
-          <label class="search-box">
-            <span>Search</span>
-            <input id="kt-search" type="search" placeholder="Topic, author, university, skill">
-          </label>
-        </div>
-
-        <div class="content-grid">
-          <aside class="filters" aria-label="KT filters">
-            <h3>Filters</h3>
-            <label>
-              Topic
-              <select id="topic-filter">
-                <option value="all">All topics</option>
-                <option value="technology">Technology</option>
-                <option value="business">Business</option>
-                <option value="science">Science</option>
-                <option value="teaching">Teaching</option>
-              </select>
-            </label>
-            <label>
-              Difficulty
-              <select id="difficulty-filter">
-                <option value="all">All levels</option>
-                <option value="Beginner">Beginner</option>
-                <option value="Intermediate">Intermediate</option>
-                <option value="Advanced">Advanced</option>
-              </select>
-            </label>
-            <label class="check-row">
-              <input id="assignment-filter" type="checkbox">
-              <span>Has practical assignments</span>
-            </label>
-          </aside>
-
-          <div class="kt-grid" id="kt-grid" aria-live="polite"></div>
-        </div>
-      </section>
-
-      <section class="kt-detail" id="selected-kt">
-        <div>
-          <p class="eyebrow">Selected KT</p>
-          <h2 id="selected-title">Full Stack Web Development Foundations</h2>
-          <p id="selected-summary">
-            A practical module for learning frontend, backend, APIs, and deployment through a real project.
-          </p>
-          <div class="tag-row" id="selected-tags"></div>
-        </div>
-        <div class="detail-columns">
-          <article>
-            <h3>Learning path</h3>
-            <ul id="lesson-list"></ul>
-          </article>
-          <article>
-            <h3>Instructor notes</h3>
-            <p id="instructor-note"></p>
-          </article>
-          <article id="assignments">
-            <h3>Curatable assignment</h3>
-            <p id="assignment-note"></p>
-          </article>
-        </div>
-      </section>
-
-      <section class="workflow" id="workflow">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Contribution workflow</p>
-            <h2>How a KT improves over time</h2>
-          </div>
-        </div>
-        <div class="workflow-grid">
-          <div class="workflow-step">
-            <span>01</span>
-            <h3>Fork or propose</h3>
-            <p>A learner, instructor, or professional suggests a better explanation, example, resource, or assignment.</p>
-          </div>
-          <div class="workflow-step">
-            <span>02</span>
-            <h3>Review</h3>
-            <p>Maintainers check correctness, teaching value, difficulty fit, and practical usefulness.</p>
-          </div>
-          <div class="workflow-step">
-            <span>03</span>
-            <h3>Merge and version</h3>
-            <p>Accepted changes become part of the KT and are tracked in the version history.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="institution-band" id="institutions">
-        <div>
-          <p class="eyebrow">Universities and organizations</p>
-          <h2>Build official knowledge collections</h2>
-          <p>
-            Departments, companies, and training teams can maintain trusted KT collections for cohorts,
-            onboarding, workshops, and cross-campus collaboration.
-          </p>
-        </div>
-        <div class="institution-stats">
-          <span><strong>64%</strong> reuse potential</span>
-          <span><strong>4.8</strong> quality rating</span>
-          <span><strong>18</strong> active departments</span>
-        </div>
-      </section>
-
-      <section class="create-panel" id="create">
-        <div>
-          <p class="eyebrow">Creator starter</p>
-          <h2>Create a KT package</h2>
-        </div>
-        <form class="create-form">
-          <label>
-            KT title
-            <input type="text" value="Introduction to Data Analysis">
-          </label>
-          <label>
-            Target audience
-            <select>
-              <option>First-year college students</option>
-              <option>Working professionals</option>
-              <option>School teachers</option>
-              <option>Non-technical beginners</option>
-            </select>
-          </label>
-          <label>
-            Practical outcome
-            <textarea rows="3">Learners will clean a dataset, create simple charts, and present insights.</textarea>
-          </label>
-          <button class="primary-action" type="button">Save draft</button>
-        </form>
-      </section>
-    </main>
+    <main id="app" aria-live="polite"></main>
 
     <script src="script.js"></script>
   </body>

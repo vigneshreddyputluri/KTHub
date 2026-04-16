@@ -98,6 +98,19 @@ textarea {
   font-weight: 900;
 }
 
+.mode-select {
+  display: grid;
+  gap: 4px;
+  min-width: 160px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.mode-select select {
+  min-height: 38px;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
@@ -183,6 +196,16 @@ h3 {
 .secondary-action {
   border-color: var(--line);
   background: #fff;
+}
+
+.text-link {
+  align-self: end;
+  color: var(--accent-dark);
+  font-weight: 800;
+}
+
+.text-link:hover {
+  text-decoration: underline;
 }
 
 .hero-panel {
@@ -325,6 +348,12 @@ h3 {
   padding: 56px 40px;
 }
 
+.route-note {
+  max-width: 760px;
+  margin: 0 0 24px;
+  color: var(--muted);
+}
+
 .section-heading {
   display: flex;
   align-items: end;
@@ -428,6 +457,15 @@ textarea {
   color: var(--muted);
 }
 
+.kt-card h3 a:focus,
+.text-link:focus,
+.primary-action:focus,
+.secondary-action:focus,
+.mode-button:focus {
+  outline: 3px solid rgba(15, 139, 141, 0.24);
+  outline-offset: 3px;
+}
+
 .meta-row,
 .tag-row {
   display: flex;
@@ -474,6 +512,13 @@ textarea {
   color: var(--muted);
 }
 
+.detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
 .detail-columns {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -511,6 +556,45 @@ textarea {
 .workflow-step p {
   margin: 0;
   color: var(--muted);
+}
+
+.workflow-step p + p {
+  margin-top: 10px;
+}
+
+.nested-section {
+  padding: 32px 0 0;
+}
+
+.activity-list {
+  display: grid;
+  gap: 10px;
+}
+
+.activity-list p {
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfd;
+}
+
+.two-column {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.contribution-form {
+  align-self: start;
+}
+
+.form-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.hidden-panel {
+  display: none;
 }
 
 .institution-band {
@@ -596,6 +680,10 @@ textarea {
     padding-bottom: 4px;
   }
 
+  .mode-select {
+    width: 100%;
+  }
+
   .hero,
   .mode-bar,
   .dashboard,
@@ -612,6 +700,10 @@ textarea {
   }
 
   .kt-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .two-column {
     grid-template-columns: 1fr;
   }
 }
