@@ -70,9 +70,10 @@ Cohort *--* KT
 ## Account And Permission Model
 
 - Account type: `user` or `institution`
-- KT view modes for users: learner and instructor
+- KT view modes for users: learner and mentor
+- KT content categories: conceptual and technical
 - User permission: save progress and participate in discussion
-- Contributor capability: propose changes from learner or instructor view
+- Contributor capability: propose changes from learner or mentor view
 - Maintainer permission: review contributions for owned or maintained KTs
 - KT owner permission: manage owned KTs
 - Institution admin permission: manage collections, organization members, and institution stats for verified memberships only
@@ -103,4 +104,4 @@ These endpoints currently use mock in-memory data. In Release 0.3, they should b
 
 ## Professional Architecture Principle
 
-Do not build KTHub as only a content website. The core platform value is collaboration, versioning, contribution review, assignment curation, learner/instructor view modes, and verified institution association.
+Do not build KTHub as only a content website. The core platform value is collaboration, versioning, contribution review, assignment curation, learner/mentor view modes, conceptual/technical content organization, and verified institution association.

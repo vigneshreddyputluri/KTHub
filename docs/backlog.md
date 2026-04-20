@@ -4,7 +4,7 @@
 
 - Create product vision and requirements artifacts
 - Build static homepage/dashboard prototype
-- Show learner/instructor mode switching
+- Show learner/mentor mode switching
 - Show KT cards and detail preview
 - Show assignments and contribution activity
 
@@ -15,7 +15,7 @@
 - Add create KT form - Completed with local draft persistence
 - Add contribution proposal flow - Completed with local proposal persistence
 - Add assignment curation flow - Completed with local assignment persistence
-- Add learner/instructor view mode switching - Completed
+- Add learner/mentor view mode switching - Completed
 - Add account and institution association model - Completed in docs and mock UI
 - Add Node.js and Express.js backend foundation - Completed
 - Add v0.2 delivery plan and release notes - Completed
@@ -33,7 +33,7 @@
 
 ## Release 0.4 - Pilot
 
-- Invite a small group of students and instructors
+- Invite a small group of students and mentors
 - Collect feedback
 - Improve onboarding
 - Add institution collections
@@ -42,7 +42,7 @@
 ## Professional Backlog Terms
 
 - **Epic**: A large product capability, such as KT publishing.
-- **User story**: A user-centered requirement, such as "As an instructor, I want to adapt a KT for my class."
+- **User story**: A user-centered requirement, such as "As a mentor, I want to adapt a KT for my class."
 - **Acceptance criteria**: Conditions that prove a story is complete.
 - **Sprint**: A short delivery cycle, commonly one or two weeks.
 - **Definition of Done**: The quality checklist before work is accepted.
@@ -51,24 +51,24 @@
 
 ### KT Discovery
 
-As a learner, I want to discover KTs by topic and difficulty so that I can find practical learning material suitable for my current level.
+As a learner, I want to discover KTs by conceptual/technical category and difficulty so that I can find practical learning material suitable for my current level.
 
 Acceptance criteria:
 
 - User can see featured KTs.
-- User can filter by topic and difficulty.
-- User can identify whether a KT supports learner mode, instructor mode, or both.
+- User can filter by topic, category and difficulty.
+- User can identify whether a KT supports learner mode, mentor mode, or both.
 
-### Instructor Mode
+### Mentor Mode
 
-As an instructor, I want teaching notes and assignment rubrics so that I can teach an existing KT effectively to my students.
+As a mentor, I want mentor notes and assignment rubrics so that I can guide learners through an existing KT effectively.
 
 Acceptance criteria:
 
-- KT detail shows teaching notes.
+- KT detail shows mentor notes.
 - KT detail shows session plan.
 - KT detail shows assignment rubric.
-- Instructor can save an adaptation draft.
+- Mentor can save an adaptation draft.
 
 ### KT Contribution
 

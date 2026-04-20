@@ -2,7 +2,7 @@
 
 ## Release Summary
 
-Release 0.2 introduces the Clickable MVP for KTHub. It expands the Release 0.1 static prototype into a navigable product experience with learner/instructor view modes, KT detail pages, KT draft creation, contribution proposals, assignment curation, institution association flow, and a Node.js/Express backend foundation.
+Release 0.2 introduces the Clickable MVP for KTHub. It expands the Release 0.1 static prototype into a navigable product experience with learner/mentor view modes, KT detail pages, KT draft creation, contribution proposals, assignment curation, institution association flow, and a Node.js/Express backend foundation.
 
 ## Release Type
 
@@ -11,9 +11,9 @@ Minor product release.
 ## Delivered Capabilities
 
 - Client-side product routing using browser hash routes.
-- View mode switcher for learner and instructor perspectives.
-- Explore screen with search, topic, difficulty, assignment, and source filters.
-- Full KT detail view with lessons, assignments, teaching notes, contribution history, version, and trust signals.
+- View mode switcher for learner and mentor perspectives.
+- Explore screen with search, conceptual/technical category, difficulty, assignment, and source filters.
+- Full KT detail view with lessons, assignments, mentor notes, contribution history, version, and trust signals.
 - Create KT draft workflow using local browser persistence.
 - Contribution proposal workflow using local browser persistence.
 - Assignment curation workflow using local browser persistence.

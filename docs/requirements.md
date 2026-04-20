@@ -6,7 +6,7 @@ KTHub - Knowledge Transfer Hub
 
 ## Scope
 
-The initial version will be a web application that allows users to discover, view, contribute to, and organize KT modules.
+The initial version will be a web application that allows users to discover, view, contribute to, enrich, and organize KT modules.
 
 ## Release 0.2 Requirement Treatment
 
@@ -23,29 +23,34 @@ Institution admin is not an account type. It is a permission detected from a ver
 
 ## KT View Modes
 
-A user account can view and contribute to a KT in either learner view or instructor view.
+A user account can view and contribute to a KT in either learner view or mentor view.
 
 ### Learner
 
 - Browse public KTs
-- Search by topic, difficulty, author, institution, and use case
+- Search by category, difficulty, author, institution, and use case
 - Open a KT in learner mode
 - Follow lessons and assignments
 - Track progress
 - Ask questions and view discussions
 
-### Instructor
+### Mentor
 
-- Open a KT in instructor mode
-- View teaching notes, class plan, prerequisite map, assignment rubrics, and common mistakes
+- Open a KT in mentor mode
+- View mentor notes, session plan, prerequisite map, assignment rubrics, and common mistakes
 - Adapt a KT for a class or cohort
 - Curate assignments
 - Suggest improvements
 
+## KT Categories
+
+- Conceptual: 
+- Technical: 
+
 ## User Account Capabilities
 
 - Create and publish KTs
-- Add lessons, assignments, resources, and teaching guidance
+- Add lessons, assignments, resources, and mentor guidance
 - Accept or reject contributions
 - Version KT releases
 - Request association with one or many institutions
@@ -72,9 +77,9 @@ A user account can view and contribute to a KT in either learner view or instruc
 ## Functional Requirements
 
 - FR-001: Users can browse featured and recent KTs.
-- FR-002: Users can filter KTs by KT view mode, topic, difficulty, and source.
+- FR-002: Users can filter KTs by KT view mode, conceptual/technical category, difficulty, and source.
 - FR-003: Users can view KT detail pages containing overview, lessons, assignments, discussions, and contribution history.
-- FR-004: Users can switch between learner and instructor views for supported KTs.
+- FR-004: Users can switch between learner and mentor views for supported KTs.
 - FR-005: User accounts can publish a KT with structured metadata.
 - FR-006: Contributors can propose improvements to KT content.
 - FR-007: Maintainers can review, accept, or reject contributions.

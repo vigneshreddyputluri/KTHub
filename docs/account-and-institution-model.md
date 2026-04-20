@@ -18,21 +18,28 @@ KTHub supports exactly two account types.
 The following are not account types:
 
 - Learner
-- Instructor
+- Mentor
 - Institution admin
 - Creator
 - Contributor
 
-Learner and instructor are KT view modes. Institution admin is a permission granted to a user through an institution membership. Creator and contributor are activity states that describe what a user is doing, not separate account categories.
+Learner and mentor are KT view modes. Institution admin is a permission granted to a user through an institution membership. Creator and contributor are activity states that describe what a user is doing, not separate account categories.
 
 ## KT View Modes
 
 A user can view and contribute to a KT in two modes:
 
 - Learner view: optimized for lessons, assignments, progress, questions, and practical learning outcomes.
-- Instructor view: optimized for teaching notes, session plans, rubrics, assignment curation, common mistakes, and adaptation.
+- Mentor view: optimized for mentor notes, session plans, rubrics, assignment curation, common mistakes, and adaptation.
 
-The same user account can switch between learner and instructor views. A contribution proposal should record which view mode was active when the proposal was submitted.
+The same user account can switch between learner and mentor views. A contribution proposal should record which view mode was active when the proposal was submitted.
+
+## KT Categories
+
+KTHub classifies KTs into two broad content categories:
+
+- Conceptual: 
+- Technical: 
 
 ## Institution Association
 

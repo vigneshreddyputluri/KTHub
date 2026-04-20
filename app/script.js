@@ -3,17 +3,18 @@ const baseKts = [
     id: "full-stack-foundations",
     title: "Full Stack Web Development Foundations",
     summary: "Frontend, backend, APIs, databases, and deployment through a realistic project.",
+    category: "technical",
     topic: "technology",
     difficulty: "Beginner",
     source: "Community maintained",
     version: "v1.4",
     adoptionCount: 1840,
-    modes: ["learner", "instructor"],
+    modes: ["learner", "mentor"],
     hasAssignment: true,
     rating: "4.9",
     contributors: 128,
     lessons: ["Web architecture basics", "HTML, CSS, and JavaScript flow", "REST API design", "Database modeling", "Deployment checklist"],
-    instructorNote: "Use one mini-product across all sessions so students see how each layer connects.",
+    mentorNote: "Use one mini-product across all sessions so learners see how each layer connects.",
     assignment: "Build a course feedback app with authentication, feedback submission, admin review, and deployment evidence.",
     rubric: "Functionality, API structure, UI clarity, deployment evidence, and reflection quality.",
     contributionHistory: ["Added REST API checklist", "Improved database modeling lesson", "Merged deployment resource pack"],
@@ -22,17 +23,18 @@ const baseKts = [
     id: "research-methods",
     title: "Research Methods for Undergraduate Projects",
     summary: "A practical KT for problem selection, literature review, methodology, and reporting.",
+    category: "conceptual",
     topic: "science",
     difficulty: "Intermediate",
     source: "University collection",
     version: "v2.1",
     adoptionCount: 920,
-    modes: ["learner", "instructor"],
+    modes: ["learner", "mentor"],
     hasAssignment: true,
     rating: "4.7",
     contributors: 64,
     lessons: ["Choosing a research problem", "Literature review mapping", "Methodology design", "Ethics and citations", "Final report structure"],
-    instructorNote: "Run weekly peer review checkpoints and maintain a visible rubric from day one.",
+    mentorNote: "Run weekly peer review checkpoints and maintain a visible rubric from day one.",
     assignment: "Create a one-page research proposal with question, hypothesis, method, risks, and expected output.",
     rubric: "Problem clarity, source quality, method fit, ethics awareness, and feasibility.",
     contributionHistory: ["Updated citation examples", "Added peer review checkpoint", "Improved ethics guidance"],
@@ -41,17 +43,18 @@ const baseKts = [
     id: "business-communication",
     title: "Business Communication for First Jobs",
     summary: "Email writing, meeting notes, stakeholder updates, presentations, and workplace clarity.",
+    category: "conceptual",
     topic: "business",
     difficulty: "Beginner",
     source: "Professional expert",
     version: "v1.2",
     adoptionCount: 1310,
-    modes: ["learner", "instructor"],
+    modes: ["learner", "mentor"],
     hasAssignment: true,
     rating: "4.8",
     contributors: 91,
     lessons: ["Professional email structure", "Status reporting", "Meeting minutes", "Presentation clarity", "Escalation etiquette"],
-    instructorNote: "Teach using messy real-world scenarios and ask learners to rewrite them professionally.",
+    mentorNote: "Teach using messy real-world scenarios and ask learners to rewrite them professionally.",
     assignment: "Convert an unclear project update into a concise stakeholder email and action tracker.",
     rubric: "Tone, brevity, action clarity, audience fit, and follow-up discipline.",
     contributionHistory: ["Added escalation examples", "Reworked meeting minutes template", "Merged stakeholder update exercise"],
@@ -60,17 +63,18 @@ const baseKts = [
     id: "teaching-ai-literacy",
     title: "Teaching AI Literacy Without Coding",
     summary: "A non-technical teaching kit for AI concepts, ethics, prompts, and evaluation.",
+    category: "conceptual",
     topic: "teaching",
     difficulty: "Intermediate",
-    source: "Instructor network",
+    source: "Mentor network",
     version: "v1.0",
     adoptionCount: 760,
-    modes: ["learner", "instructor"],
+    modes: ["learner", "mentor"],
     hasAssignment: true,
     rating: "4.6",
     contributors: 52,
     lessons: ["What AI systems do", "Prompt design", "Bias and reliability", "Classroom activities", "Assessment patterns"],
-    instructorNote: "Keep examples domain-neutral so arts, commerce, science, and engineering students can participate.",
+    mentorNote: "Keep examples domain-neutral so arts, commerce, science, and engineering learners can participate.",
     assignment: "Design a responsible AI use policy for a class project and defend it with three examples.",
     rubric: "Policy clarity, risk identification, practical examples, and responsible use reasoning.",
     contributionHistory: ["Added assessment prompts", "Improved bias activity", "Added classroom policy template"],
@@ -79,17 +83,18 @@ const baseKts = [
     id: "hospitality-service",
     title: "Hospitality Service Excellence",
     summary: "A practical KT for guest handling, service recovery, standards, and team coordination.",
+    category: "conceptual",
     topic: "business",
     difficulty: "Advanced",
     source: "Industry mentor",
     version: "v0.9",
     adoptionCount: 410,
-    modes: ["learner", "instructor"],
+    modes: ["learner", "mentor"],
     hasAssignment: false,
     rating: "4.5",
     contributors: 37,
     lessons: ["Guest journey mapping", "Service standards", "Complaint recovery", "Shift handover", "Quality review"],
-    instructorNote: "Role-play difficult guest scenarios and evaluate response tone, speed, and ownership.",
+    mentorNote: "Role-play difficult guest scenarios and evaluate response tone, speed, and ownership.",
     assignment: "Create a service recovery plan for a delayed room check-in with guest communication scripts.",
     rubric: "Empathy, speed, ownership, escalation judgment, and recovery completeness.",
     contributionHistory: ["Added handover template", "Improved service recovery scenario"],
@@ -98,17 +103,18 @@ const baseKts = [
     id: "data-analysis",
     title: "Introduction to Data Analysis",
     summary: "Clean data, calculate summaries, create charts, and communicate insights for beginners.",
+    category: "technical",
     topic: "technology",
     difficulty: "Beginner",
     source: "College department",
     version: "v1.7",
     adoptionCount: 2140,
-    modes: ["learner", "instructor"],
+    modes: ["learner", "mentor"],
     hasAssignment: true,
     rating: "4.9",
     contributors: 143,
     lessons: ["Data types", "Cleaning spreadsheet data", "Summary statistics", "Chart selection", "Insight storytelling"],
-    instructorNote: "Use familiar datasets like marks, attendance, expenses, or survey results before advanced tools.",
+    mentorNote: "Use familiar datasets like marks, attendance, expenses, or survey results before advanced tools.",
     assignment: "Clean a student activity dataset and present three useful charts with written interpretation.",
     rubric: "Data cleaning accuracy, chart selection, interpretation quality, and presentation clarity.",
     contributionHistory: ["Added chart selection guide", "Merged attendance dataset", "Updated rubric for beginners"],
@@ -121,11 +127,16 @@ const viewModeContent = {
     empty: "No KTs match your learner filters.",
     action: "View or propose changes to KTs from the learning perspective.",
   },
-  instructor: {
-    title: "Instructor view",
-    empty: "No KTs match your instructor filters.",
-    action: "View or propose changes to KTs from the teaching and curation perspective.",
+  mentor: {
+    title: "Mentor view",
+    empty: "No KTs match your mentor filters.",
+    action: "View or propose changes to KTs from the mentoring, curation, and guidance perspective.",
   },
+};
+
+const categoryLabels = {
+  conceptual: "Conceptual",
+  technical: "Technical",
 };
 
 const storage = {
@@ -176,6 +187,7 @@ const state = {
   viewMode: normalizeViewMode(localStorage.getItem(storage.viewMode)),
   filters: {
     query: "",
+    category: "all",
     topic: "all",
     difficulty: "all",
     source: "all",
@@ -196,7 +208,7 @@ function writeCollection(key, value) {
 }
 
 function normalizeViewMode(value) {
-  return value === "instructor" ? "instructor" : "learner";
+  return value === "instructor" || value === "mentor" ? "mentor" : "learner";
 }
 
 function getKts() {
@@ -257,13 +269,31 @@ function slugify(value) {
     .replace(/^-|-$/g, "");
 }
 
+function getKtCategory(kt) {
+  return kt.category || kt.topic || "conceptual";
+}
+
+function getCategoryLabel(category) {
+  return categoryLabels[category] || category;
+}
+
+function getMentorNote(kt) {
+  return kt.mentorNote || kt.instructorNote || "";
+}
+
+function ktSupportsViewMode(kt, viewMode) {
+  if (!Array.isArray(kt.modes)) return true;
+  return kt.modes.includes(viewMode) || (viewMode === "mentor" && kt.modes.includes("instructor"));
+}
+
 function getVisibleKts() {
   const query = state.filters.query.toLowerCase();
 
   return getKts().filter((kt) => {
-    const queryText = `${kt.title} ${kt.summary} ${kt.source} ${kt.topic}`.toLowerCase();
-    return kt.modes.includes(state.viewMode)
-      && (state.filters.topic === "all" || kt.topic === state.filters.topic)
+    const category = getKtCategory(kt);
+    const queryText = `${kt.title} ${kt.summary} ${kt.source} ${category} ${getCategoryLabel(category)}`.toLowerCase();
+    return ktSupportsViewMode(kt, state.viewMode)
+      && (state.filters.category === "all" || category === state.filters.category)
       && (state.filters.difficulty === "all" || kt.difficulty === state.filters.difficulty)
       && (state.filters.source === "all" || kt.source === state.filters.source)
       && (!state.filters.assignmentOnly || kt.hasAssignment)
@@ -283,7 +313,7 @@ function renderHome() {
         <p class="eyebrow">Knowledge transfer, made collaborative</p>
         <h1>KTHub</h1>
         <p class="hero-text">
-          Discover, teach, improve, and reuse practical knowledge modules across classrooms,
+          Discover, mentor, improve, and reuse practical knowledge modules across classrooms,
           companies, and communities.
         </p>
         <div class="hero-actions">
@@ -292,10 +322,10 @@ function renderHome() {
         </div>
       </div>
       <div class="hero-panel" aria-label="KTHub platform snapshot">
-        <div class="knowledge-map" aria-label="Knowledge collaboration map">
+        <div class="knowledge-map" aria-label="Knowledge enrichment map">
           <span class="map-node large">KT</span>
           <span class="map-node top">Learners</span>
-          <span class="map-node right">Instructors</span>
+          <span class="map-node right">Mentors</span>
           <span class="map-node bottom">Assignments</span>
           <span class="map-node left">Contributors</span>
         </div>
@@ -357,12 +387,12 @@ function renderExplore() {
           <h3>Filters</h3>
           <label>
             Search
-            <input id="kt-search" type="search" value="${escapeHtml(state.filters.query)}" placeholder="Topic, author, university, skill">
+            <input id="kt-search" type="search" value="${escapeHtml(state.filters.query)}" placeholder="Concept, API, runtime, university, skill">
           </label>
           <label>
-            Topic
-            <select id="topic-filter">
-              ${renderOptions(["all", "technology", "business", "science", "teaching"], state.filters.topic)}
+            Category
+            <select id="category-filter">
+              ${renderOptions(["all", "conceptual", "technical"], state.filters.category, categoryLabels)}
             </select>
           </label>
           <label>
@@ -392,9 +422,9 @@ function renderExplore() {
   bindFilters();
 }
 
-function renderOptions(options, selected) {
+function renderOptions(options, selected, labels = {}) {
   return options.map((option) => {
-    const label = option === "all" ? "All" : option;
+    const label = option === "all" ? "All" : labels[option] || option;
     return `<option value="${escapeHtml(option)}" ${option === selected ? "selected" : ""}>${escapeHtml(label)}</option>`;
   }).join("");
 }
@@ -407,11 +437,12 @@ function renderKtCard(kt) {
         <span class="pill gold">${escapeHtml(kt.rating)} rating</span>
       </div>
       <div>
-        <h3><a href="#/kt/${escapeHtml(kt.id)}">${escapeHtml(kt.title)}</a></h3>
+          <h3><a href="#/kt/${escapeHtml(kt.id)}">${escapeHtml(kt.title)}</a></h3>
         <p>${escapeHtml(kt.summary)}</p>
       </div>
       <div class="meta-row">
         <span class="pill green">${escapeHtml(kt.contributors)} contributors</span>
+        <span class="pill">${escapeHtml(getCategoryLabel(getKtCategory(kt)))}</span>
         <span class="pill rose">${escapeHtml(kt.source)}</span>
       </div>
       <a class="text-link" href="#/kt/${escapeHtml(kt.id)}">Open KT detail</a>
@@ -448,8 +479,8 @@ function renderKtDetail(id) {
           <ul>${kt.lessons.map((lesson) => `<li>${escapeHtml(lesson)}</li>`).join("")}</ul>
         </article>
         <article>
-          <h3>Instructor notes</h3>
-          <p>${escapeHtml(kt.instructorNote)}</p>
+          <h3>Mentor notes</h3>
+          <p>${escapeHtml(getMentorNote(kt))}</p>
         </article>
         <article>
           <h3>Practical assignment</h3>
@@ -507,7 +538,7 @@ Summary statistics
 Chart selection
 Insight storytelling</textarea></label>
         <label>Practical assignment <textarea name="assignment" rows="3">Clean a student activity dataset and present three useful charts with written interpretation.</textarea></label>
-        <label>Teaching notes <textarea name="instructorNote" rows="3">Use familiar datasets like marks, attendance, expenses, or survey results before advanced tools.</textarea></label>
+        <label>Mentor notes <textarea name="mentorNote" rows="3">Use familiar datasets like marks, attendance, expenses, or survey results before advanced tools.</textarea></label>
         <button class="primary-action" type="submit">Save draft</button>
       </form>
     </section>
@@ -541,7 +572,7 @@ function renderContributions(id) {
             <select name="changeType">
               <option>Lesson improvement</option>
               <option>Assignment update</option>
-              <option>Teaching note</option>
+              <option>Mentor note</option>
               <option>Resource addition</option>
               <option>Correction</option>
             </select>
@@ -746,9 +777,9 @@ function renderInstitutionAdminStats(adminMemberships) {
       </div>
       <div class="workflow-grid">
         ${adminMemberships.map((membership) => {
-          const institution = getInstitutionById(membership.institutionId);
-          if (!institution) return "";
-          return `
+    const institution = getInstitutionById(membership.institutionId);
+    if (!institution) return "";
+    return `
             <article class="workflow-step">
               <span>${escapeHtml(institution.domain)}</span>
               <h3>${escapeHtml(institution.name)}</h3>
@@ -757,7 +788,7 @@ function renderInstitutionAdminStats(adminMemberships) {
               <p>${escapeHtml(institution.stats.adoptionRate)} KT adoption rate</p>
             </article>
           `;
-        }).join("")}
+  }).join("")}
       </div>
     </section>
   `;
@@ -797,17 +828,18 @@ function handleCreateKt(event) {
     id: `${slugify(title)}-${Date.now()}`,
     title,
     summary: form.get("summary"),
+    category: form.get("category"),
     topic: form.get("topic"),
     difficulty: form.get("difficulty"),
     source: "Local draft",
     version: "draft",
     adoptionCount: 0,
-    modes: ["learner", "instructor"],
+    modes: ["learner", "mentor"],
     hasAssignment: Boolean(form.get("assignment")),
     rating: "New",
     contributors: 1,
     lessons: form.get("lessons").split("\n").filter(Boolean),
-    instructorNote: form.get("instructorNote"),
+    mentorNote: form.get("mentorNote"),
     assignment: form.get("assignment"),
     rubric: "Draft rubric to be finalized during assignment curation.",
     contributionHistory: ["Created as local v0.2 draft"],

@@ -1,8 +1,8 @@
 # KTHub
 
-KTHub is a Knowledge Transfer Hub: a collaborative platform where learners, instructors, professionals, universities, and organizations can publish, learn from, improve, and reuse structured knowledge transfer modules.
+KTHub is a Knowledge Transfer Hub: a collaborative knowledge upgrading platform for learners, mentors, professionals, universities, and organizations to publish, learn from, improve, and reuse structured knowledge transfer modules.
 
-The product idea is similar in spirit to GitHub, but instead of source code repositories, the main unit is a **KT**: a practical learning module with lessons, assignments, teaching notes, contributions, reviews, and adoption workflows.
+The product idea is similar in spirit to GitHub, but instead of source code repositories, the main unit is a **KT**: a practical learning module with conceptual or technical content, lessons, assignments, mentor notes, contributions, reviews, and adoption workflows.
 
 ## Current Delivery Stage
 
@@ -55,9 +55,14 @@ Institution admin is not a separate account type. It is a verified permission he
 ## KT View Modes
 
 - **Learner view**: view or propose changes to a KT from the learning perspective.
-- **Instructor view**: view or propose changes to a KT from the teaching, curation, and assignment perspective.
+- **Mentor view**: view or propose changes to a KT from the mentoring, curation, and assignment perspective.
 
 A user can contribute to a KT while using either view mode.
+
+## KT Categories
+
+- **Conceptual**: 
+- **Technical**: 
 
 ## Institution Association
 
@@ -85,3 +90,5 @@ See the `docs/` folder for the current artifacts.
 - `docs/backlog.md`
 - `docs/requirements.md`
 - `docs/architecture.md`
+- `docs/uml-diagram-drafts.md`
+- `docs/design-pattern-recommendations.md`
