@@ -444,7 +444,7 @@ function renderKtDetail(id) {
       </div>
       <div class="detail-columns">
         <article>
-          <h3>${viewMode === "instructor" ? "Session plan" : "Learning path"}</h3>
+          <h3>${viewMode === "mentor" ? "Mentor plan" : "Learning path"}</h3>
           <ul>${kt.lessons.map((lesson) => `<li>${escapeHtml(lesson)}</li>`).join("")}</ul>
         </article>
         <article>
